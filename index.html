@@ -47,12 +47,9 @@
         <p>滚轮缩放</p>
       </div>
     </div>
-
-    <!--<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>-->
-
     <script type="module">
-      import * as THREE from "./js/three/build/three.module.js";
-      import { OrbitControls } from "./js/three/examples/jsm/controls/OrbitControls.js";
+      import * as THREE from "./node_modules/three/build/three.module.js";
+      import { OrbitControls } from "./node_modules/three/examples/jsm/controls/OrbitControls.js";
       // 场景设置
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(
