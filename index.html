@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D星空场景</title>
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "../node_modules/three/build/three.module.js"
-        }
-      }
-    </script>
     <style>
       body {
         margin: 0;
@@ -48,8 +41,8 @@
       </div>
     </div>
     <script type="module">
-      import * as THREE from "./node_modules/three/build/three.module.js";
-      import { OrbitControls } from "./node_modules/three/examples/jsm/controls/OrbitControls.js";
+      import * as THREE from "three";
+      import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
       // 场景设置
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(
